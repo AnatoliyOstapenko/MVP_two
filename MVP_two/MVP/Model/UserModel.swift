@@ -8,7 +8,7 @@
 import Foundation
 
 struct UserModel: Decodable {
-    let id: String
+    let id: Int
     let name: String
     let username: String
     let email: String
@@ -28,8 +28,8 @@ struct Address: Decodable {
 }
 
 struct Geo: Decodable {
-    let latitude: Double
-    let longitude: Double
+    let latitude: String
+    let longitude: String
     
     enum CodingKeys: String, CodingKey {
         case latitude = "lat"
